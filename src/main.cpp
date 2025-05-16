@@ -318,7 +318,7 @@ void loop() {
       // Serial.print(" is now ");
       // Serial.println(new_state ? "ON" : "OFF");
     }
-  
+    
     if (r_button.fell()) {
       Serial.println("R Button Pressed");
 
@@ -332,12 +332,14 @@ void loop() {
     break;
   
   case CHARGER_ENABLE_CONF:
+    // Cancel
     if (r_button.fell()) {
-      current_page = CHOOSE_CHARGER;
+      current_page = SCAN_WAIT;
       tft.fillScreen(BG_COLOR);
       last_menu_index = -1;
     }
 
+    // Proceed
     if (l_button.fell()) {
       relays[menu_index].state = true;
       relays[menu_index].timer = millis();
