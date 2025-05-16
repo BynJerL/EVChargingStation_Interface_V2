@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"name": "EVChargingStation_Interface_V2",
+			"path": ".."
+		},
+		{
+			"name": "RFID-TFT-ESP32-AZD",
+			"path": "../../RFID-TFT-ESP32-AZD"
+		}
+	],
+	"settings": {}
+}
