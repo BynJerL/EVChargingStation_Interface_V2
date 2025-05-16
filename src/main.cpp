@@ -651,7 +651,7 @@ void displayScanOK_Menu(String current_uid) {
   tft.setTextColor(TXT_COLOR_1, BG_COLOR);
   
   // Show "Card Detected!"
-  tft.drawString("Card Detected!", tft.width() / 2, tft.height() / 2 - 20);
+  tft.drawString("Kartu terdeteksi!", tft.width() / 2, tft.height() / 2 - 20);
 
   // Show UID
   tft.setTextColor(TXT_COLOR_1, BG_COLOR);
@@ -663,7 +663,7 @@ void displayUnauthorizedCard() {
   tft.setTextSize(2);
   tft.setTextDatum(MC_DATUM);
   tft.setTextColor(TXT_COLOR_1, BG_COLOR);
-  tft.drawString("Unauthorized Card!", tft.width() / 2, tft.height() / 2);
+  tft.drawString("Kartu tidak terdaftar!", tft.width() / 2, tft.height() / 2);
 }
 
 void displayChargerList() {
