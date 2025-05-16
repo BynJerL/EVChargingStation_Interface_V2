@@ -453,7 +453,7 @@ void loadCardList() {
     tft.setCursor(10, 10);
     tft.setTextColor(TFT_WHITE);
     tft.setTextSize(1);
-    tft.println("Failed to open card_list.csv");
+    tft.println("Gagal membuka card_list.csv");
     return;
   }
 
